@@ -123,6 +123,8 @@ custom_formats:
   score: 0
 - name: CRIT
   score: 0
+- name: Dolby Vision
+  score: 0
 - name: DRPO
   score: 0
 - name: HTSR
@@ -154,8 +156,6 @@ custom_formats:
 - name: Banned WEBRip
   score: -999999
 - name: BCORE
-  score: -999999
-- name: Dolby Vision
   score: -999999
 - name: Full Disc
   score: -999999
