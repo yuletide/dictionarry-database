@@ -19,7 +19,7 @@ tags:
 upgradesAllowed: true
 minCustomFormatScore: 20000
 upgradeUntilScore: 888888
-minScoreIncrement: 10000
+minScoreIncrement: 1000
 custom_formats:
 - name: 1080p Bluray HEVC Tier 1
   score: 360000
@@ -171,8 +171,6 @@ custom_formats:
   score: 0
 - name: ASL
   score: -999999
-- name: AV1
-  score: -999999
 - name: Banned Groups (Efficient)
   score: -999999
 - name: Banned WEBRip (Efficient)
@@ -191,6 +189,8 @@ custom_formats:
   score: -999999
 - name: VVC
   score: -999999
+- name: x265 (Efficient)
+  score: 0
 - name: Xvid
   score: -999999
 custom_formats_radarr:
@@ -230,6 +230,8 @@ custom_formats_radarr:
   score: 60000
 - name: MA
   score: 4000
+- name: AV1
+  score: 1000
 - name: Better Theatricals
   score: 1000
 - name: Special Edition
