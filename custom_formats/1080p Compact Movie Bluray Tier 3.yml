@@ -23,10 +23,10 @@ conditions:
   required: true
   type: release_title
 - name: Not HONE
-  type: release_title
-  required: true
   negate: true
   pattern: HONE
+  required: true
+  type: release_title
 - name: DarQ
   negate: false
   pattern: DarQ
@@ -57,6 +57,11 @@ conditions:
   pattern: Vialle
   required: false
   type: release_group
+- name: Tigole
+  type: release_group
+  required: false
+  negate: false
+  pattern: Tigole
 tests:
 - conditionResults:
   - matches: true

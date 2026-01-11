@@ -167,8 +167,6 @@ custom_formats:
   score: 0
 - name: STAN
   score: 0
-- name: AV1
-  score: -999999
 - name: Banned Groups (Efficient)
   score: -999999
 - name: Banned WEBRip (Efficient)
@@ -244,6 +242,8 @@ custom_formats_radarr:
   score: 2000
 - name: MAX
   score: 2000
+- name: AV1
+  score: 1000
 - name: Better Theatricals
   score: 1000
 - name: Special Edition
@@ -329,6 +329,8 @@ custom_formats_sonarr:
   score: 1000
 - name: Season Pack
   score: 10
+- name: AV1
+  score: 0
 - name: HBO Max Enhancement
   score: -1000
 - name: Remux (Source)

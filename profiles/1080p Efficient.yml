@@ -15,10 +15,11 @@ tags:
 - Lossy Audio
 - h265
 - x265
+- AV1
 upgradesAllowed: true
 minCustomFormatScore: 20000
 upgradeUntilScore: 888888
-minScoreIncrement: 10000
+minScoreIncrement: 1
 custom_formats:
 - name: 1080p Bluray HEVC Tier 1
   score: 360000
@@ -168,8 +169,6 @@ custom_formats:
   score: 0
 - name: STAN
   score: 0
-- name: AV1
-  score: -999999
 - name: Banned Groups (Efficient)
   score: -999999
 - name: Banned WEBRip (Efficient)
@@ -231,6 +230,8 @@ custom_formats_radarr:
   score: 60000
 - name: MA
   score: 4000
+- name: AV1
+  score: 1000
 - name: Better Theatricals
   score: 1000
 - name: Special Edition
@@ -286,6 +287,8 @@ custom_formats_sonarr:
   score: 301000
 - name: 1080p Efficient TV WEB Tier 5
   score: 300000
+- name: AV1
+  score: 10
 - name: Season Pack
   score: 10
 - name: Remux (Source)
