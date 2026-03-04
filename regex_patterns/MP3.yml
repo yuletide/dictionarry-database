@@ -1,0 +1,30 @@
+name: MP3
+pattern: \bMP3\b
+description: ''
+tags:
+- Audio
+tests:
+- expected: true
+  id: 1
+  input: Movie 2024 1080p WEB-DL MP3 x264-GROUP
+  lastRun: null
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: false
+- expected: false
+  id: 2
+  input: Un-Ex You 2025 1080p NF WEB-DL DD 5.1 H.264-FLUX
+  lastRun: null
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: false
+- expected: false
+  id: 3
+  input: Dan Da Dan AKA Dandadan S01E10 1080p CR WEB-DL AAC 2.0 x264-SubsPlease
+  lastRun: null
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: false

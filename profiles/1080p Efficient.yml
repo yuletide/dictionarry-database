@@ -125,6 +125,8 @@ custom_formats:
   score: 300
 - name: AAC
   score: 200
+- name: Stereo Audio
+  score: -10000
 - name: WEB-DL Tier 1
   score: 100
 - name: WEB-DL Tier 2

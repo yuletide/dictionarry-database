@@ -1,0 +1,107 @@
+name: Stereo Audio
+description: Matches releases with 2.0 stereo audio or MP3. Used to penalize low
+  channel count or low quality audio formats.
+tags:
+- Audio
+conditions:
+- name: 2.0 Stereo
+  negate: false
+  pattern: 2.0 Stereo
+  required: false
+  type: release_title
+- name: MP3
+  negate: false
+  pattern: MP3
+  required: false
+  type: release_title
+tests:
+- conditionResults:
+  - matches: true
+    name: 2.0 Stereo
+    negate: false
+    pattern: 2.0 Stereo
+    required: false
+    type: release_title
+  - matches: false
+    name: MP3
+    negate: false
+    pattern: MP3
+    required: false
+    type: release_title
+  expected: true
+  id: 1
+  input: Dan Da Dan AKA Dandadan S01E10 1080p CR WEB-DL AAC 2.0 x264-SubsPlease
+  lastRun: null
+  passes: false
+- conditionResults:
+  - matches: true
+    name: 2.0 Stereo
+    negate: false
+    pattern: 2.0 Stereo
+    required: false
+    type: release_title
+  - matches: false
+    name: MP3
+    negate: false
+    pattern: MP3
+    required: false
+    type: release_title
+  expected: true
+  id: 2
+  input: _Summer S00 JAPANESE 480p DVDRip DD 2.0 x264-Tsundere
+  lastRun: null
+  passes: false
+- conditionResults:
+  - matches: false
+    name: 2.0 Stereo
+    negate: false
+    pattern: 2.0 Stereo
+    required: false
+    type: release_title
+  - matches: true
+    name: MP3
+    negate: false
+    pattern: MP3
+    required: false
+    type: release_title
+  expected: true
+  id: 3
+  input: Movie 2024 1080p WEB-DL MP3 x264-GROUP
+  lastRun: null
+  passes: false
+- conditionResults:
+  - matches: false
+    name: 2.0 Stereo
+    negate: false
+    pattern: 2.0 Stereo
+    required: false
+    type: release_title
+  - matches: false
+    name: MP3
+    negate: false
+    pattern: MP3
+    required: false
+    type: release_title
+  expected: false
+  id: 4
+  input: Un-Ex You 2025 1080p NF WEB-DL DD 5.1 H.264-FLUX
+  lastRun: null
+  passes: false
+- conditionResults:
+  - matches: false
+    name: 2.0 Stereo
+    negate: false
+    pattern: 2.0 Stereo
+    required: false
+    type: release_title
+  - matches: false
+    name: MP3
+    negate: false
+    pattern: MP3
+    required: false
+    type: release_title
+  expected: false
+  id: 5
+  input: Planet Earth II S01 REPACK UHD BluRay 2160p DD5.1 HDR x265-BHDStudio
+  lastRun: null
+  passes: false
