@@ -1,0 +1,47 @@
+name: 2.0 Stereo
+pattern: \D2\.0\D
+description: ''
+tags:
+- Audio
+- Channel
+tests:
+- expected: true
+  id: 1
+  input: Dan Da Dan AKA Dandadan S01E10 1080p CR WEB-DL AAC 2.0 x264-SubsPlease
+  lastRun: null
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: false
+- expected: true
+  id: 2
+  input: Aqua Teen Hunger Force (2000) S00E13 (480p DVD x265 SDR AAC 2.0 English - DS4K)
+  lastRun: null
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: false
+- expected: true
+  id: 3
+  input: _Summer S00 JAPANESE 480p DVDRip DD 2.0 x264-Tsundere
+  lastRun: null
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: false
+- expected: false
+  id: 4
+  input: Un-Ex You 2025 1080p NF WEB-DL DD 5.1 H.264-FLUX
+  lastRun: null
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: false
+- expected: false
+  id: 5
+  input: Planet Earth II S01 REPACK UHD BluRay 2160p DD5.1 HDR x265-BHDStudio
+  lastRun: null
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: false
