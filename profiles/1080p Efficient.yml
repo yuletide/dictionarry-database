@@ -19,7 +19,7 @@ tags:
 upgradesAllowed: true
 minCustomFormatScore: 20000
 upgradeUntilScore: 888888
-minScoreIncrement: 1
+minScoreIncrement: 10000
 custom_formats:
 - name: 1080p Bluray HEVC Tier 1
   score: 360000
@@ -179,8 +179,6 @@ custom_formats:
   score: -999999
 - name: Full Disc
   score: -999999
-- name: h265 (Efficient)
-  score: -999999
 - name: Lossless Audio
   score: -999999
 - name: Remux
@@ -188,8 +186,6 @@ custom_formats:
 - name: VP9
   score: -999999
 - name: VVC
-  score: -999999
-- name: x265 (Efficient)
   score: -999999
 - name: Xvid
   score: -999999
@@ -230,12 +226,16 @@ custom_formats_radarr:
   score: 60000
 - name: MA
   score: 4000
-- name: AV1
-  score: 1000
 - name: Better Theatricals
   score: 1000
 - name: Special Edition
   score: 1000
+- name: AV1
+  score: 0
+- name: h265 (Efficient)
+  score: 0
+- name: x265 (Efficient)
+  score: 0
 - name: 3D
   score: -999999
 - name: B&W
@@ -291,11 +291,15 @@ custom_formats_sonarr:
   score: 10
 - name: Season Pack
   score: 10
+- name: h265 (Efficient)
+  score: -999999
 - name: Remux (Source)
   score: -999999
 - name: TV Extras
   score: -999999
 - name: Upscaled
+  score: -999999
+- name: x265 (Efficient)
   score: -999999
 qualities:
 - id: -1
