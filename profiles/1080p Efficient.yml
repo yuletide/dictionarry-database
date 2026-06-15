@@ -185,6 +185,10 @@ custom_formats:
   score: -999999
 - name: Full Disc
   score: -999999
+- name: German DL
+  score: -999999
+- name: h265 (Efficient)
+  score: 1000
 - name: Lossless Audio
   score: -999999
 - name: Remux
@@ -194,7 +198,7 @@ custom_formats:
 - name: VVC
   score: -999999
 - name: x265 (Efficient)
-  score: 0
+  score: 1000
 - name: Xvid
   score: -999999
 custom_formats_radarr:
